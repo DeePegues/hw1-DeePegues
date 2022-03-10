@@ -1,1 +1,16 @@
 hi
+
+EC) There are 263146 cases
+wc -l COVIDSummaryData.csv
+
+1) Lorain has 5031 cases
+ grep -o -i Lorain COVIDSummaryData.csv | wc -l
+
+2) There are 131901 female cases, there are 256442 male cases
+ grep -o -i Male/Female COVIDSummaryData.csv | wc -l
+
+3) Could get this to work but here is what I came up with
+cut -d "," -f 1 COVIDSummaryData.csv | grep -ro COVIDSummaryData.csv | wc -l
+
+4)
+cut -d "," -f3 COVIDSummaryData.csv | 
