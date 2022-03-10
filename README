@@ -14,4 +14,6 @@ wc -l COVIDSummaryData.csv
 cut -d "," -f 1 COVIDSummaryData.csv | grep -ro COVIDSummaryData.csv | wc -l
 
 4)
-cut -d "," -f3 COVIDSummaryData.csv | 
+cut -d "," -f3 COVIDSummaryData.csv |
+
+I have adhered to the Honor Code in this assignment
